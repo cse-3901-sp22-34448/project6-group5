@@ -1,0 +1,25 @@
+<div id="<%= dom_id grade %>">
+
+  <tr>
+    <td>
+      <%= grade.assignment %>
+    </td>
+    <td>
+       <%= grade.score %>
+    </td>
+    <td>
+      <%= grade.date %>
+    </td>
+    <td>
+      <%= grade.feedback %>
+    </td>
+    <td>
+      <%= link_to "Edit this grade", edit_grade_path(grade) %> 
+    </td>
+    <td>
+      <%= button_to "Destroy this grade", grade, method: :delete %>
+    </td>
+  
+  </tr>
+
+</div>

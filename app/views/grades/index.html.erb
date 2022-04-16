@@ -1,13 +1,21 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Grades</h1>
+<h1>My Grades</h1>
 
-    <%= render "thead" %>
-
-<div id="grades">
-  <% @grades.each do |grade| %>
-    <%= render grade %>
-  <% end %>
-</div>
-
-<%= link_to "Create New Grade", new_grade_path %>
+<% if current_user.job != "Professor" %>
+  <%= render "thead_for_stu" %>
+  <div id="grades">
+    <% @grades.each do |grade| %>
+      <% if current_user.job == grade.group %>
+          <%= render grade %>
+      <% end%>
+    <% end %>
+  </div>
+<% else %>
+  <%= render "thead" %>
+  <div id="grades">
+    <% @grades.each do |grade| %>
+        <%= render grade %>
+    <% end %>
+  </div>
+<% end %>

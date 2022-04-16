@@ -8,8 +8,10 @@ Rails.application.routes.draw do
   get 'grades/new'
   get 'grades/index'
   get 'grades/thead'
+  get 'grades/show'
   get 'my_grade', to: "grades#my_grade"
   root 'home#index'
+  
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

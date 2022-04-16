@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_04_16_201302) do
+ActiveRecord::Schema[7.0].define(version: 2022_04_16_223823) do
   create_table "grades", force: :cascade do |t|
     t.string "assignment"
     t.integer "score"
@@ -32,6 +32,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_16_201302) do
     t.string "name"
     t.string "job"
     t.string "time"
+    t.string "group"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

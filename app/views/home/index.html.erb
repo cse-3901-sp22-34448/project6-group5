@@ -2,4 +2,5 @@
 
     <% if user_signed_in? %>
       <p>Hello, <%= current_user.name %>!</p>
+      <p>You are a <%= current_user.job %>!</p>
     <% end %>

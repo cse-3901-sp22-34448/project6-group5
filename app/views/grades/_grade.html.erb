@@ -2,16 +2,23 @@
 
   <tr>
     <td>
+      <%= grade.group %>
+    </td>
+    <td>
       <%= grade.assignment %>
     </td>
     <td>
        <%= grade.score %>
     </td>
     <td>
-      <%= grade.date %>
+      <%= grade.feedback %>
+    </td>
+
+    <td>
+      <%= current_user.name %>
     </td>
     <td>
-      <%= grade.feedback %>
+      <%= grade.created_at.strftime("%m/%d/20%y")  %>
     </td>
     <td>
       <%= link_to "Edit this grade", edit_grade_path(grade) %> 

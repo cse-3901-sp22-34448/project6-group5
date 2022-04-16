@@ -4,7 +4,8 @@ class CreateGrades < ActiveRecord::Migration[7.0]
       t.string :assignment
       t.integer :score
       t.string :feedback
-      t.time :date
+      t.string :date
+      t.string :group
 
       t.timestamps
     end

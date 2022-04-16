@@ -12,8 +12,13 @@
   <% end %>
 
   <div>
+    <%= form.label :Group, style: "display: block" %>
+    <%= form.select :group, ["Group 1", "Group 2", "Group 3", "Group 4", "Group 5", "Group 6", "Group 7"] %>
+  </div>
+
+  <div>
     <%= form.label :assignment, style: "display: block" %>
-    <%= form.search_field :assignment %>
+    <%= form.select :assignment, ["Project 1", "Project 2", "Project 3", "Project 4", "Project 5", "Project 6"] %>
   </div>
 
   <div>
@@ -26,10 +31,6 @@
     <%= form.text_field :feedback %>
   </div>
 
-  <div>
-    <%= form.label :date, style: "display: block" %>
-    <%= form.number_field :date %>
-  </div>
 
 <br/>
   <div>

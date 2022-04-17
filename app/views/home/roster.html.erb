@@ -1,19 +1,38 @@
 <table class="table table-striped">
   <tr>
     <th>
-      <strong> Group #</strong>
+      <strong>Name</strong>
+    </th>
+    <th>
+      <strong>email</strong>
+    </th>
+    <th>
+      <strong>Group</strong>
+    </th>
+    <th>
+      <strong>Destroy</strong>
     </th>
   </tr>
+  <% index = 0%>
     <% Users.all.each do |user| %>
         <% if user.name != nil %>
             <tr>
                 <td> 
                     <%= user.name %> 
                 </td>
+                <td> 
+                    <%= user.email %> 
+                </td>
+                <td> 
+                    <%= user.job %> 
+                </td>
+                <td> 
+                    <%= button_to "delete" %>
+                </td>
             </tr>
             <br/>
         <% end %>
+        <% index = index + 1 %>
     <% end %>
-
 </table>
     

@@ -18,6 +18,10 @@ class GradesController < ApplicationController
   # GET /grades/1/edit
   def edit
   end
+  
+  def roster
+    @users = User.all
+  end
 
   # POST /grades or /grades.json
   def create

@@ -11,7 +11,7 @@
         <%= grade.feedback %>
       </td>
       <td>
-        <%= grade.evaluator %>
+       <%= grade.evaluator %> (<%= grade.evaluator_group %>)
       </td>
       <td>
         <%= grade.created_at.strftime("%m/%d/20%y")  %>
@@ -33,7 +33,7 @@
       </td>
 
       <td>
-        <%= grade.evaluator %>
+        <%= grade.evaluator %> (<%= grade.evaluator_group %>)
       </td>
       <td>
         <%= grade.updated_at.strftime("%m/%d/20%y")  %>

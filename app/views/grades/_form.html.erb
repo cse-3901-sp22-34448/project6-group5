@@ -31,8 +31,13 @@
     <%= form.text_field :feedback %>
   </div>
 
+  <div>
+    <%= form.label :evaluator, style: "display: block" %>
+    <%= form.select :evaluator, [current_user.name] %>
+  </div>
 
-<br/>
+   <br/>
+
   <div>
     <%= form.submit %>
   </div>

@@ -10,9 +10,8 @@
       <td>
         <%= grade.feedback %>
       </td>
-
       <td>
-        <%= current_user.name %>
+        <%= grade.evaluator %>
       </td>
       <td>
         <%= grade.created_at.strftime("%m/%d/20%y")  %>
@@ -34,10 +33,10 @@
       </td>
 
       <td>
-        <%= current_user.name %>
+        <%= grade.evaluator %>
       </td>
       <td>
-        <%= grade.created_at.strftime("%m/%d/20%y")  %>
+        <%= grade.updated_at.strftime("%m/%d/20%y")  %>
       </td>
       <td>
         <%= link_to "Edit this grade", edit_grade_path(grade) %> 

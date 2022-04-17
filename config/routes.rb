@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'grades/thead'
   get 'grades/show'
   get 'my_grade', to: "grades#my_grade"
+  get 'home/roster'
   root 'home#index'
   
 

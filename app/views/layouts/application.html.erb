@@ -15,7 +15,15 @@
     <title>Evaluating Presentations</title>
   </head>
   <body>
-    <%= render 'home/header' %>
+    <% if user_signed_in? %>
+      <% if current_user.job == "Professor"%>
+          <%= render 'home/prof_header' %>
+        <% else %>
+          <%= render 'home/stu_header' %>
+      <% end %>
+    <% else %>
+      <%= render 'home/stu_header' %>
+    <% end %>
     <div class="container">
         <%= yield %>
     </div>

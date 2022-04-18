@@ -11,22 +11,22 @@
     </div>
   <% end %>
 
-  <div>
+  <div class="field">
     <%= form.label :Group, style: "display: block" %>
     <%= form.select :group, ["Group 1", "Group 2", "Group 3", "Group 4", "Group 5", "Group 6", "Group 7"] %>
   </div>
 
-  <div>
+  <div class="field">
     <%= form.label :assignment, style: "display: block" %>
     <%= form.select :assignment, ["Project 2", "Project 3", "Project 4", "Project 5", "Technical Presentation 1", "Project 6", "Technical Presentation 2"] %>
   </div>
 
-  <div>
+  <div class="field">
     <%= form.label :score, style: "display: block" %>
     <%= form.number_field :score %>
   </div>
 
-  <div>
+  <div class="field">
     <%= form.label :feedback, style: "display: block" %>
     <%= form.text_field :feedback %>
   </div>

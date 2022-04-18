@@ -1,0 +1,23 @@
+<p style="color: green"><%= notice %></p>
+
+
+<h1>
+  <%= link_to "Create a New Assignment", new_assignment_path %>
+</h1>
+
+<br/>
+
+<table class="table table-striped">
+  <tr>
+    <th>
+      <strong>Name</strong>
+    </th>
+  </tr>
+      <% AssignmentsController.instance_variable_get(:'@x').each do |assignment| %>
+      <tr>
+        <td>
+          <%= assignment %>      
+        </td>
+      </tr>
+      <% end %>
+</table>

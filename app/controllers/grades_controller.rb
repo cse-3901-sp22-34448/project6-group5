@@ -1,5 +1,8 @@
 class GradesController < ApplicationController
   before_action :set_grade, only: %i[ show edit update destroy ]
+  
+  @x = ["Project 2", "Project 3", "Project 4", "Project 5", "Technical Presentation 1", "Project 6", "Technical Presentation 2"]
+
 
   # GET /grades or /grades.json
   def index

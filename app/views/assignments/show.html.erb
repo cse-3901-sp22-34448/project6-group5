@@ -1,0 +1,8 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @assignment %>
+  <% AssignmentsController.instance_variable_get(:'@x').push(@assignment.new_assignment) %>
+
+<div>
+  <%= link_to "Back to assignments", new_assignment_path %>
+</div>

@@ -10,7 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_04_18_162026) do
+ActiveRecord::Schema[7.0].define(version: 2022_04_18_165244) do
+  create_table "assignments", force: :cascade do |t|
+    t.string "new_assignment"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "courses", force: :cascade do |t|
+    t.string "new_course"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "grades", force: :cascade do |t|
     t.string "assignment"
     t.integer "score"

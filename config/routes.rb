@@ -1,15 +1,17 @@
 Rails.application.routes.draw do
+  resources :assignments
+  resources :courses
   resources :groups
   devise_for :users
   resources :grades
   resources :texts
   resources :feedbacks
   get 'home/grades'
+  get 'home/assignments'
   get 'grades/new'
   get 'grades/index'
   get 'grades/thead'
   get 'grades/show'
-  get 'my_grade', to: "grades#my_grade"
   get 'home/roster'
   root 'home#index'
   

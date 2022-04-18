@@ -1,6 +1,6 @@
 <br>
 <div class="div1" style="width:100%">
-<h1>Roster</h1>
+<h1>Roster: <%= current_user.course %></h1>
 <table class="table table-striped">
   <tr>
     <th>
@@ -11,9 +11,6 @@
     </th>
     <th>
       <strong>Group</strong>
-    </th>
-    <th>
-      <strong>Delete</strong>
     </th>
   </tr>
   <% index = 0%>
@@ -28,9 +25,6 @@
                 </td>
                 <td> 
                     <%= user.job %> 
-                </td>
-                <td> 
-                    <%= button_to "delete" %>
                 </td>
             </tr>
         <% end %>

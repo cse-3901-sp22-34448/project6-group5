@@ -12,6 +12,10 @@
     <%= f.text_field :name%>
   </div>
   <div class="field">
+    <%= f.label :Course %><br />
+    <%= f.select :course, ["CSE 3901"] %>
+  </div>
+  <div class="field">
     <%= f.label :Group %><br />
     <%= f.select :job, ["Group 1", "Group 2", "Group 3", "Group 4", "Group 5", "Group 6", "Group 7", "Professor"] %>
   </div>

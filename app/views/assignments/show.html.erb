@@ -5,6 +5,6 @@
 <%= render @assignment %>
   <% AssignmentsController.instance_variable_get(:'@x').push(@assignment.new_assignment) %>
 
-<div>
+<div class="div1">
   <%= link_to "Back to assignments", assignments_path %>
 </div>

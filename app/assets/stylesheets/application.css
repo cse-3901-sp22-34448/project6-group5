@@ -27,6 +27,22 @@
    border-radius: 25px;
  }
 
+ .p1{
+   background-color:#94c5a8;
+   margin: auto;
+   padding: 20px;
+   width: 40%;
+   border-radius: 5px;
+ }
+
+ .p1{
+   background-color:#d8a092;
+   margin: auto;
+   padding: 20px;
+   width: 40%;
+   border-radius: 5px;
+ }
+
  .field{
     padding: 5px;
  }

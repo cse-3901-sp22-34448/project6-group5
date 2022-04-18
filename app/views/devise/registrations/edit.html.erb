@@ -1,4 +1,6 @@
-<p style="color: green"><%= notice %></p>
+<% if notice %>
+<br><p class="p1" style="color: green"><%= notice %></p>
+<% end %>
 <br>
 <div class="div1">
 <h2>Edit <%= resource_name.to_s.humanize %></h2>

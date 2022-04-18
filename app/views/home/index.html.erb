@@ -1,4 +1,6 @@
-<p style="color: green"><%= notice %></p>
+<% if notice %>
+<br><p class="p1" style="color: green"><%= notice %></p>
+<% end %>
 <br>
 <div class="div1">
     <% if user_signed_in? %>
